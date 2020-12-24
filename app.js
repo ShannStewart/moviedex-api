@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
   
       const bearerToken = req.get('Authorization');
       console.log("bearerToken: " + bearerToken);
-      const apiToken = process.env.API_TOKEN;
+      const apiToken = "bearer " + process.env.API_TOKEN;
       console.log("apitoken: " + apiToken);
   
       console.log('validate bearer token middleware');
