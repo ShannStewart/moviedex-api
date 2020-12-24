@@ -61,7 +61,6 @@ app.get('/', (req, res) => {
             response = response.filter(movie =>
               // case insensitive searching
               movie.avg_vote >= req.query.avg_vote)
-            )
           }
           
     }
